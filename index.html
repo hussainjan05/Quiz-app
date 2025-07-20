@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced JS Quiz</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+
+    <!-- Welcome Screen -->
+    <div id="start-screen">
+      <h1>JavaScript Quiz</h1>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quiz" class="hidden">
+      <div id="top-bar">
+        <div id="timer">Time: 15</div>
+        <div id="progress-bar"><div id="progress-fill"></div></div>
+      </div>
+      <h2 id="question">Question text</h2>
+      <ul id="answers"></ul>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="result" class="hidden"></div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
